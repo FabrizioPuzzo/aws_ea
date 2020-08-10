@@ -1,13 +1,15 @@
 import React, {Component} from "react";
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import ListGroupItem from 'react-bootstrap/ListGroupItem';
 import Image from 'react-bootstrap/Image';
 import TwitterCircle from '../img/twitter_circle.svg';
-import UserDataList from '../data/user_data_list.json'
+import UserDataList from '../data/user_data_list.json';
+import './UserCard.css';
 
 export default class UserCard extends Component {
     constructor(props) {
@@ -51,6 +53,13 @@ render() {
                       <Button target="_blank" href={"https://twitter.com/" + this.state.userData.screen_name}>Twitter Profil</Button> 
                     </Card.Body>
                   </Card>
+            </Row>
+            <Row>
+                  <a className="authorBar"> Made by <strong>Fabrizio Puzzo</strong>:</a>
+            </Row>
+            <Row>
+                  <Col><Button target="_blank" href={ "https://www.linkedin.com/in/fabrizio-puzzo"}>LinkedIn</Button></Col>
+                  <Col><Button variant="dark" target="_blank" href={ "https://github.com/FabrizioPuzzo"}>GitHub</Button></Col>
             </Row>
         </Container>
     )

@@ -25,6 +25,18 @@ class ChartTSD extends Component {
                 },
                 chart: {
                     parentHeightOffset: 50,
+                    toolbar: {
+                        show: true,
+                        tools: {
+                            download: true,
+                            selection: false,
+                            zoom: false,
+                            zoomin: false,
+                            zoomout: false,
+                            pan: false,
+                            reset: false | '<img src="/static/icons/reset.png" width="20">',
+                            customIcons: []
+                        }}
                 },
                 title: {
                     text: props.data.title,
@@ -56,6 +68,7 @@ class ChartTSD extends Component {
                 }
             },
             description: props.data.description,
+            timespan: this.props.data.timespan
         }
     }
 
@@ -78,6 +91,18 @@ class ChartTSD extends Component {
                     },
                     chart: {
                         parentHeightOffset: 50,
+                        toolbar: {
+                            show: true,
+                        tools: {
+                                download: true,
+                                selection: false,
+                                zoom: false,
+                                zoomin: false,
+                                zoomout: false,
+                                pan: false,
+                                reset: false | '<img src="/static/icons/reset.png" width="20">',
+                                customIcons: []
+                            }}
                     },
                     title: {
                         text: this.props.data.title,
@@ -108,7 +133,8 @@ class ChartTSD extends Component {
                         },
                     }
                 },
-                description: this.props.data.description
+                description: this.props.data.description,
+                timespan: this.props.data.timespan
             });
         }
     }
@@ -131,6 +157,8 @@ class ChartTSD extends Component {
                     <Col>
                         <p className="ChartDescriptionTitle">Chart description</p>
                         {this.state.description}
+                        <p className="ChartTimespan">{this.state.timespan}</p>
+                        
                     </Col>
                 </Row>
             </Container>
