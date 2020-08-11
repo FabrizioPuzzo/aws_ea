@@ -58,7 +58,7 @@ render() {
                   <a className="authorBar"> Made by <strong>Fabrizio Puzzo</strong>:</a>
             </Row>
             <Row>
-                  <Col><Button target="_blank" href={ "https://www.linkedin.com/in/fabrizio-puzzo"}>LinkedIn</Button></Col>
+                  <Col><Button target="_blank" href={ "https://linkedin.com/in/fabrizio-puzzo"}>LinkedIn</Button></Col>
                   <Col><Button variant="dark" target="_blank" href={ "https://github.com/FabrizioPuzzo"}>GitHub</Button></Col>
             </Row>
         </Container>
