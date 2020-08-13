@@ -149,7 +149,7 @@ class ChartTSD extends Component {
                         series={this.state.series}
                         xaxis={this.state.xaxis}
                         type='line'
-                        height="600"
+                        height="500"
                         width="100%"
                         />
                     </Col>
