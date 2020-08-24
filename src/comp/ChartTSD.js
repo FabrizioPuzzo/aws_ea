@@ -38,6 +38,7 @@ class ChartTSD extends Component {
                             customIcons: []
                         }}
                 },
+                colors: ['#E74C3C', '#9B59B6', '#3498DB', '#1ABC9C', '#27AE60', '#F1C40F', '#F39C12', '#873600', '#B3B6B7', '#1C2833'],
                 title: {
                     text: props.data.title,
                     align: 'center',
@@ -104,6 +105,7 @@ class ChartTSD extends Component {
                                 customIcons: []
                             }}
                     },
+                    colors: ['#E74C3C', '#9B59B6', '#3498DB', '#1ABC9C', '#27AE60', '#F1C40F', '#F39C12', '#873600', '#B3B6B7', '#1C2833'],
                     title: {
                         text: this.props.data.title,
                         align: 'center',
