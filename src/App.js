@@ -69,7 +69,7 @@ export default class App extends Component {
                             {this.renderSuggestions()}
                         </div>
                         <p>
-                        You can find a complete list of all the users that are being analyzed  
+                        Find a list of all analyzed users   
                         <a target="_blank" href="https://docs.google.com/spreadsheets/d/1bcwUwm84Cfvtd5XHhek5jy6_eBKI-zt6tHj2dgLuN_M/edit?usp=sharing"> here</a>. 
                         </p>
                         <UserCard selectedUser={this.state.selectedUser.screen_name}/>

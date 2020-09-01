@@ -1,7 +1,30 @@
+  .smBar {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 5px;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #212529;
+    border-radius: 10px;
+  }
+    
   .authorBar {
     height: 20px;
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 20px;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .articleBar {
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -54,12 +54,18 @@ render() {
                     </Card.Body>
                   </Card>
             </Row>
-            <Row>
-                  <a className="authorBar"> Made by <strong>Fabrizio Puzzo</strong>:</a>
-            </Row>
-            <Row>
-                  <Col><Button target="_blank" href={ "https://linkedin.com/in/fabrizio-puzzo"}>LinkedIn</Button></Col>
-                  <Col><Button variant="dark" target="_blank" href={ "https://github.com/FabrizioPuzzo"}>GitHub</Button></Col>
+            <Row className="smBar">
+                <div className="authorBar"> 
+                  Made by <strong>Fabrizio Puzzo</strong>:
+                </div>
+                  
+                <Col><Button target="_blank" href={ "https://linkedin.com/in/fabrizio-puzzo"}>LinkedIn</Button></Col>
+                <Col><Button variant="dark" target="_blank" href={ "https://github.com/FabrizioPuzzo"}>GitHub</Button></Col>
+
+                <div className="articleBar">
+                    Read more about this project 
+                    <a target="_blank" href="https://medium.com/@fabriziopuzzo1/longterm-twitter-user-analysis-920a2349aa85"> here</a>. 
+                </div>
             </Row>
         </Container>
     )
